@@ -1,0 +1,119 @@
+/* ========== Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+  background: #f8f8f8;
+  color: #222;
+  line-height: 1.8;
+}
+
+/* ========== Layout ========== */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+/* ========== Header ========== */
+.site-header {
+  background: linear-gradient(135deg, #1d1f3c, #2e2f4f);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+/* ========== Navigation ========== */
+.main-nav {
+  background: #2a2b4d;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.8rem;
+}
+.main-nav a {
+  color: white;
+  margin: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.main-nav a:hover {
+  background: #3b3c5f;
+  border-radius: 5px;
+}
+
+/* ========== Typography ========== */
+h2 {
+  font-size: 1.6rem;
+  color: #2e2f4f;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 1rem;
+}
+ul, ol {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+
+/* ========== CTA Button ========== */
+.cta-button {
+  display: inline-block;
+  background: #2e2f4f;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.cta-button:hover {
+  background: #1f1f3f;
+  transform: scale(1.05);
+}
+
+/* ========== Footer ========== */
+footer {
+  background: #2a2b4d;
+  color: white;
+  text-align: center;
+  padding: 1.2rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+  }
+  .main-nav a {
+    margin: 0.3rem 0;
+  }
+  .site-title {
+    font-size: 1.5rem;
+  }
+  section {
+    padding: 1.2rem;
+  }
+}
