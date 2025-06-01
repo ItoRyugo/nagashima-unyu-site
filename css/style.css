@@ -1,3 +1,4 @@
+
 /* ========== Reset ========== */
 * {
   margin: 0;
@@ -55,7 +56,7 @@ section {
   transition: all 0.3s ease;
 }
 .main-nav a:hover {
-  background: #3b3c5f;
+  background: rgba(255,255,255,0.1);
   border-radius: 5px;
 }
 
@@ -106,12 +107,23 @@ footer {
 @media (max-width: 768px) {
   .main-nav {
     flex-direction: column;
+    padding: 0;
+    background: #2e2f4f;
+    border-radius: 0 0 10px 10px;
   }
   .main-nav a {
-    margin: 0.3rem 0;
+    display: block;
+    padding: 0.8rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 1.1rem;
+    text-align: center;
   }
   .site-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+  }
+  .site-header {
+    padding: 1rem 0.5rem;
   }
   section {
     padding: 1.2rem;
