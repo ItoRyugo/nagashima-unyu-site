@@ -1,3 +1,4 @@
+
 // AOS（スクロールアニメーション）初期化
 AOS.init({
   duration: 1000,
@@ -18,7 +19,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ページトップに戻るボタン（オプション対応可能）
+// ページトップに戻るボタン
 const toTopBtn = document.createElement('button');
 toTopBtn.textContent = '▲';
 toTopBtn.className = 'to-top';
@@ -32,4 +33,22 @@ window.addEventListener('scroll', () => {
 
 toTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// 現在地ハイライト
+const currentPath = location.pathname.split("/").pop();
+document.querySelectorAll('.main-nav a').forEach(link => {
+  if (link.getAttribute('href') === currentPath) {
+    link.classList.add('active');
+  }
+});
+
+// ハンバーガーメニュー（オプション対応）
+const navToggle = document.createElement('button');
+navToggle.className = 'nav-toggle';
+navToggle.innerHTML = '☰';
+document.body.insertBefore(navToggle, document.body.firstChild);
+
+navToggle.addEventListener('click', () => {
+  document.querySelector('.main-nav').classList.toggle('open');
 });
