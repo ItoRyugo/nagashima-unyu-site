@@ -32,6 +32,7 @@ section {
   color: white;
   text-align: center;
   padding: 1.5rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 .site-title {
   font-size: 1.8rem;
@@ -110,20 +111,22 @@ footer {
     padding: 0;
     background: #2e2f4f;
     border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
   .main-nav a {
     display: block;
-    padding: 0.8rem;
+    padding: 1rem;
     border-bottom: 1px solid rgba(255,255,255,0.1);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
   }
   .site-title {
-    font-size: 1.3rem;
-    padding: 0.5rem 0;
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
   }
   .site-header {
     padding: 1rem 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
   }
   section {
     padding: 1.2rem;
