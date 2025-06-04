@@ -5,12 +5,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
-  background: #f8f8f8;
-  color: #222;
-  line-height: 1.8;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
+
+body.page-top {
+  background-image: url("../img/u3.jpg");
+}
+body.page-about {
+  background-image: url("../img/u15.jpg");
+}
+body.page-services {
+  background-image: url("../img/u8.jpg");
+}
+body.page-recruit {
+  background-image: url("../img/u12.jpg");
+}
+body.page-contact {
+  background-image: url("../img/u14.jpg");
+}
+
+
+
 
 /* ========== Layout ========== */
 main {
@@ -18,13 +38,16 @@ main {
   margin: 0 auto;
   padding: 2rem 1rem;
 }
+
 section {
-  margin-bottom: 3rem;
+  margin: 3rem 0; /* 上下に4remの余白を追加 */
   padding: 2rem;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9); /* 少し透けてもOK */
   border-radius: 8px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
+
+
 
 /* ========== Header ========== */
 .site-header {
@@ -188,3 +211,4 @@ footer {
     display: flex;
   }
 }
+
